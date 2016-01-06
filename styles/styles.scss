@@ -1,0 +1,187 @@
+@import '_initializers.scss';
+
+$primary-font: 'Poppins', sans-serif;
+
+$dark-grey: #39393B;
+$light-grey: #93969C;
+$white: #FFF;
+$mars-blue: #0066B7;
+$error: #F74844;
+
+
+// EXISTING WRAPPER ON MARSDD SITE
+.base {
+  // ADDED STYLE TO ENSURE FOOTER NEVER OVERLAPS ALL CONTENT
+  padding-bottom: 150px;
+}
+
+.stickyFooter {
+  background: $dark-grey;
+  font-family: $primary-font;
+  color: $white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 35px 150px;
+  bottom: 0;
+}
+
+.close {
+  // position: relative;
+}
+
+.close > p {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer-text, .footer-input {
+  float: left;
+}
+
+.footer-text {
+  width: 60%;
+}
+
+.footer-input {
+  width: 40%;
+  padding: 10px 20px;
+}
+
+.text-header {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $white;
+}
+
+.text-legal > h3, .text-byline {
+  font-size: 12px;
+  color: $light-grey;
+  font-weight: 400;
+  margin: 0;
+  te-transform: none;
+}
+
+.text-byline {
+  font-size: 14px;
+}
+
+.legal-link {
+  color: $light-grey;
+}
+
+.footer-email, .footer-submit {
+  height: 50px;
+  font-size: 14px;
+  float: left;
+}
+
+.footer-email {
+  margin: 0;
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 80%;
+}
+
+.footer-submit {
+  background: $mars-blue;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  width: 20%;
+}
+
+.form-email {
+  position: relative;
+}
+
+#email-error {
+  position: absolute;
+  top: 55px;
+  left: 5px;
+  font-size: 12px;
+  color: $error;
+  font-weight: 500;
+}
+
+.footer-email.error {
+  border: 2px solid $error;
+  padding-left: 13px;
+}
+
+.footer-submitted {
+  display: none;
+  text-align: center;
+}
+
+.footer-cta {
+  // display: none;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1200px) {
+  .stickyFooter {
+    padding-right: 0;
+  }
+  .footer-input, .footer-text {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .stickyFooter {
+    padding: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .footer-text, .footer-input {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
+  .footer-email, .footer-submit {
+    margin-top: 20px;
+    // width: 50%;
+  }
+  #email-error {
+    top: 80px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .stickyFooter {
+    // padding: 20px;
+  }
+  .footer-text, .footer-input {
+    width: 90%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .stickyFooter {
+    padding: 20px;
+  }
+  .footer-email, .footer-submit {
+    width: 100%;
+    border-radius: 6px;
+    // margin: 5px 0;
+  }
+}
