@@ -12,7 +12,7 @@ $error: #F74844;
 // EXISTING WRAPPER ON MARSDD SITE
 .base {
   // ADDED STYLE TO ENSURE FOOTER NEVER OVERLAPS ALL CONTENT
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 
 .stickyFooter {
@@ -132,6 +132,24 @@ $error: #F74844;
   // display: none;
 }
 
+/* Mobile footer styles */
+.mobile-text-header {
+  font-size: 14px;
+}
+
+.mobile-footer-start {
+  height: 40px;
+  margin-top: 5px;
+}
+
+#mobileFooter > .close > p {
+  font-size: 18px;
+}
+
+.mobile-footer-text-br {
+  display: none;
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 1200px) {
   .stickyFooter {
@@ -143,6 +161,15 @@ $error: #F74844;
 }
 
 @media (max-width: 1000px) {
+  .base {
+    padding-bottom: 250px;
+  }
+  #desktopFooter {
+    display: block;
+  }
+  #mobileFooter {
+    display: none;
+  }
   .stickyFooter {
     padding: 20px;
     padding-bottom: 50px;
@@ -166,22 +193,41 @@ $error: #F74844;
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  .stickyFooter {
-    // padding: 20px;
+  .base {
+    padding-bottom: 100px;
   }
-  .footer-text, .footer-input {
-    width: 90%;
+  #desktopFooter {
+    display: none;
   }
-}
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
+  #mobileFooter {
+    display: block;
+  }
   .stickyFooter {
     padding: 20px;
   }
   .footer-email, .footer-submit {
     width: 100%;
     border-radius: 6px;
-    // margin: 5px 0;
+    margin: 5px 0;
+  }
+  .footer-text, .footer-input {
+    width: 90%;
+  }
+  
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  // .stickyFooter {
+  //   padding: 20px;
+  // }
+  // .footer-email, .footer-submit {
+  //   width: 100%;
+  //   border-radius: 6px;
+  //   // margin: 5px 0;
+  // }
+  .footer-text, .footer-input {
+    width: 90%;
   }
 }
