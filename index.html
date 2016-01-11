@@ -5,7 +5,7 @@
     <title>MaRS Footer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href=" styles/styles.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
   </head>
@@ -71,7 +71,21 @@
         </p>
 
       </section>
-      <footer class='stickyFooter clearfix'>
+      <div id="mobileFooter" class='stickyFooter clearfix'>
+        <div class="close">
+          <p> &#215; </p>
+        </div>
+        <div class="footer-cta">
+          <section class="footer-text">
+            <h2 class="text-header mobile-text-header">Join the MaRS network and <br class="mobile-footer-text-br">grow your startup.</h2>
+          </section>
+          <section class="footer-input">
+            <input class ="mobile-footer-start footer-submit" type="button" id="start" value="Start"></input>
+          </section>
+        </div>
+      </div>
+
+      <footer id="desktopFooter" class='stickyFooter clearfix'>
         <div class="close">
           <p>	&#215; </p>
         </div>
@@ -88,7 +102,7 @@
               <div class="form-email">
                 <input class="footer-email"type="email" name="email" placeholder="Enter your e-mail" id="email" required>
               </div>
-              <input class="footer-submit" type="submit" name="submit" value="Start" id="submit">
+              <input class="footer-submit" type="submit" name="submit" value="Submit" id="submit">
             </form>
           </section>
         </div>
