@@ -147,6 +147,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .close > p {
   position: absolute;
+  cursor: pointer;
   top: 5px;
   right: 10px;
   margin: 0;
