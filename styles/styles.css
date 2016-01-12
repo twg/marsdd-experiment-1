@@ -183,9 +183,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .legal-link {
   color: #93969C; }
 
+.legal-mobile > h3, .text-byline {
+  font-size: 8px; }
+
 .footer-email, .footer-submit {
   height: 50px;
-  font-size: 14px;
+  font-size: 16px;
   float: left; }
 
 .footer-email {
@@ -243,12 +246,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .mobile-footer-text-br {
   display: none; }
 
-/* Overlay styles */
-#overlay {
-  display: none; }
-
 .mobile-form-text {
-  font-size: 18px; }
+  line-height: 1.4;
+  font-size: 12px;
+  font-weight: bold; }
 
 /* Portrait tablet and small desktops */
 @media (max-width: 1200px) {
@@ -267,7 +268,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   #mobileFooter {
     display: none; }
 
-  #overlay {
+  #mobileForm {
     display: none; }
 
   .stickyFooter {
@@ -296,7 +297,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     display: none; }
 
   #mobileFooter {
-    display: block; }
+    display: none; }
 
   #overlay {
     display: none; }
@@ -320,7 +321,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     display: inline; }
 
   .base {
-    padding-bottom: 450px; }
+    padding-bottom: 200px; }
 
   .footer-text, .footer-input {
     width: 90%; } }

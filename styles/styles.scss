@@ -76,9 +76,13 @@ $error: #F74844;
   color: $light-grey;
 }
 
+.legal-mobile > h3, .text-byline{
+  font-size: 8px;
+}
+
 .footer-email, .footer-submit {
   height: 50px;
-  font-size: 14px;
+  font-size: 16px;
   float: left;
 }
 
@@ -151,13 +155,10 @@ $error: #F74844;
   display: none;
 }
 
-/* Overlay styles */
-#overlay {
-  display: none;
-}
-
 .mobile-form-text {
-  font-size: 18px;
+  line-height: 1.4;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 /* Portrait tablet and small desktops */
@@ -180,7 +181,7 @@ $error: #F74844;
   #mobileFooter {
     display: none;
   }
-  #overlay {
+  #mobileForm {
     display: none;
   }
   .stickyFooter {
@@ -213,7 +214,7 @@ $error: #F74844;
     display: none;
   }
   #mobileFooter {
-    display: block;
+    display: none;
   }
   #overlay {
     display: none;
@@ -241,7 +242,7 @@ $error: #F74844;
     display: inline;
   }
   .base {
-    padding-bottom: 450px;
+    padding-bottom: 200px;
   }
   // .stickyFooter {
   //   padding: 20px;
